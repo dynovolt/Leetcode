@@ -1,7 +1,14 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        while "()" in s or "[]" in s or "{}" in s:
-            s = s.replace("()", "")
-            s = s.replace("[]", "")
-            s = s.replace("{}", "")
-        return s == ""
+        if len(s) % 2 != 0:
+            return False           
+        stack = []
+        bracket_map = {')': '(', ']': '[', '}': '{'}        
+        for char in s:
+            if char in bracket_map:
+                top_element = stack.pop() if stack else '#'
+                if bracket_map[char] != top_element:
+                    return False
+            else:
+                stack.append(char)
+        return not stack
