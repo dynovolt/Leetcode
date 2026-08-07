@@ -4,5 +4,10 @@ class Solution:
         for ch in s:
             if ch.isalnum():
                 cleaned.append(ch.lower())
-        cleaned = "".join(cleaned)
-        return cleaned == cleaned[::-1]
+        left, right = 0, len(cleaned) - 1
+        while left < right:
+            if cleaned[left] != cleaned[right]:
+                return False
+            left += 1
+            right -= 1
+        return True
