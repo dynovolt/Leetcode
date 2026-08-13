@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/dynovolt/Leetcode/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/dynovolt/Leetcode/tree/master/0217-contains-duplicate) |
+| [0283-move-zeroes](https://github.com/dynovolt/Leetcode/tree/master/0283-move-zeroes) |
 ## Hash Table
 |  |
 | ------- |
@@ -28,4 +29,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/dynovolt/Leetcode/tree/master/0125-valid-palindrome) |
+| [0283-move-zeroes](https://github.com/dynovolt/Leetcode/tree/master/0283-move-zeroes) |
 <!---LeetCode Topics End-->
