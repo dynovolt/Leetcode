@@ -2,8 +2,10 @@ class Solution:
     def moveZeroes(self, nums):
         j = 0
 
-        for i in range(len(nums)):
-            if nums[i] != 0:
-                if i != j:
-                    nums[i], nums[j] = nums[j], nums[i]
+        for x in nums:
+            if x != 0:
+                nums[j] = x
                 j += 1
+
+        for i in range(j, len(nums)):
+            nums[i] = 0
